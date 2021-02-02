@@ -6,7 +6,12 @@ body{
     width: 70%;
     min-width: 300px;
     margin: auto;
-    background: url('images/fondecran.PNG') repeat-y ;
+    
+    display: flex;
+}
+
+aside{
+    background-color: #59B0B9;
 }
 
 #presentation{
@@ -61,18 +66,16 @@ body{
 }
 
 #competences{
-    display: flex;
 }
 
 #competences h3{
     width: 460px; 
-    background-color: red;
+    /* background-color: red; */
 }
 
 #comp-comp{
-    display: flex;
     flex-wrap: wrap;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 #comp-comp div{
