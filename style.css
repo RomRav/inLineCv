@@ -1,0 +1,84 @@
+body{
+    
+}
+
+#cv-page{
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    background: url('images/fondecran.PNG') repeat-y ;
+}
+
+#presentation{
+    display: flex;
+}
+
+#pres-info{
+    width: 460px; 
+    text-align: end;
+    padding-right: 10px;
+    list-style: none;
+    /* background-color: purple; */
+}
+
+#pres-titre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titre{
+    width: 80%;
+    text-align: center;
+    /* background-color: red; */
+    font-size: 1.5em;
+    padding: 0px;
+}
+
+#pres-pres{
+    font-size: 1.5em;
+    width: 80%;
+    padding: 0px;
+    /* background-color: yellow; */
+}
+
+#icones-liens{
+    /* background-color: blue; */
+    width: 20%;
+    height: 5em;
+}
+
+#icones-liens img{
+    height: 100%;
+}
+
+#photo{
+   width: 20%;
+}
+
+#photo img{
+    display: block;
+    margin: auto;
+}
+
+#competences{
+    display: flex;
+}
+
+#competences h3{
+    width: 460px; 
+    background-color: red;
+}
+
+#comp-comp{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: purple;
+}
+
+#comp-comp div{
+display: flex;
+}
+
+#comp-comp img{
+    height: 60%;
+}
