@@ -1,17 +1,19 @@
-body{
-    
-}
-
 #cv-page{
-    width: 70%;
+    width: 65%;
     min-width: 300px;
-    margin: auto;
-    
+    margin: auto;  
     display: flex;
 }
 
 aside{
     background-color: #59B0B9;
+    width: 30%;
+}
+
+section{
+    box-shadow: 3px 3px 3px gray;
+    width: 70%;
+    background-color: rgb(245, 245, 245);
 }
 
 #presentation{
@@ -19,7 +21,6 @@ aside{
 }
 
 #pres-info{
-    width: 460px; 
     text-align: end;
     padding-right: 10px;
     list-style: none;
@@ -35,21 +36,20 @@ aside{
     width: 80%;
     text-align: center;
     /* background-color: red; */
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0px;
 }
 
 #pres-pres{
-    font-size: 1.5em;
-    width: 80%;
-    padding: 0px;
+    font-size: 1.2em;
     /* background-color: yellow; */
 }
 
 #icones-liens{
     /* background-color: blue; */
-    width: 20%;
-    height: 5em;
+    height: 4em;
+    display: flex;
+    justify-content: space-around;
 }
 
 #icones-liens img{
@@ -63,14 +63,8 @@ aside{
 #photo img{
     display: block;
     margin: auto;
-}
-
-#competences{
-}
-
-#competences h3{
-    width: 460px; 
-    /* background-color: red; */
+    box-shadow: 3px 3px 3px gray;
+    height: 100%;
 }
 
 #comp-comp{
@@ -80,8 +74,10 @@ aside{
 
 #comp-comp div{
 display: flex;
+justify-content: space-around;
 }
 
 #comp-comp img{
-    height: 60%;
+    height: 20%;
 }
+
