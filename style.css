@@ -1,3 +1,15 @@
+@font-face{
+    font-family: 'verdana';
+    src: url('fonts/verdana.ttf');
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
 #cv-page{
     width: 65%;
     min-width: 300px;
@@ -14,6 +26,7 @@ section{
     box-shadow: 3px 3px 3px gray;
     width: 70%;
     background-color: rgb(245, 245, 245);
+    padding: 10px;
 }
 
 #presentation{
@@ -23,8 +36,10 @@ section{
 #pres-info{
     text-align: end;
     padding-right: 10px;
+}
+
+#pres-info ul{
     list-style: none;
-    /* background-color: purple; */
 }
 
 #pres-titre{
@@ -35,25 +50,26 @@ section{
 #titre{
     width: 80%;
     text-align: center;
-    /* background-color: red; */
-    font-size: 1.2em;
-    padding: 0px;
+    font-size: 1.5em;
 }
 
 #pres-pres{
     font-size: 1.2em;
-    /* background-color: yellow; */
 }
 
 #icones-liens{
-    /* background-color: blue; */
-    height: 4em;
+    height: 5em;
     display: flex;
-    justify-content: space-around;
+   
 }
 
 #icones-liens img{
     height: 100%;
+}
+
+#icones-liens a{
+    width: 50%;
+
 }
 
 #photo{
@@ -63,21 +79,33 @@ section{
 #photo img{
     display: block;
     margin: auto;
+    padding: 1px;
     box-shadow: 3px 3px 3px gray;
     height: 100%;
 }
 
 #comp-comp{
+    display: flex;
     flex-wrap: wrap;
-    /* background-color: purple; */
+    align-items: center;
 }
 
 #comp-comp div{
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#comp-comp h4{
+    width: 50%;
 }
 
 #comp-comp img{
     height: 20%;
+    width: 20%;
+}
+
+h3{
+    text-transform: uppercase;
 }
 
