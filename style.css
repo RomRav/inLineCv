@@ -3,6 +3,29 @@
     src: url('fonts/verdana.ttf');
 }
 
+@media all and (max-width:1200px){
+
+#photo{
+    order: 1;
+}
+
+#titre{
+    order: 2;
+}
+#pres-pres{
+    order: 3;
+}
+#pres-titre{
+    justify-content: center;
+    align-items: center;
+}
+#comp-comp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start !important; 
+}
+}
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -11,8 +34,9 @@ body{
 }
 
 #cv-page{
-    width: 65%;
-    min-width: 300px;
+    width: 60%;
+    min-width: 350px;
+    max-width: 1000px;
     margin: auto;  
     display: flex;
 }
@@ -20,6 +44,7 @@ body{
 aside{
     background-color: #59B0B9;
     width: 30%;
+    padding: 3px;
 }
 
 section{
@@ -48,7 +73,7 @@ section{
 }
 
 #titre{
-    width: 80%;
+    width: 70%;
     text-align: center;
     font-size: 1.5em;
 }
@@ -58,9 +83,8 @@ section{
 }
 
 #icones-liens{
-    height: 5em;
+    height: 4em;
     display: flex;
-   
 }
 
 #icones-liens img{
@@ -69,30 +93,35 @@ section{
 
 #icones-liens a{
     width: 50%;
-
+    display: flex;
+    justify-content: center;
 }
 
 #photo{
-   width: 20%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#photo:hover{
+    
 }
 
 #photo img{
-    display: block;
-    margin: auto;
-    padding: 1px;
-    box-shadow: 3px 3px 3px gray;
     height: 100%;
+    box-shadow: 3px 3px 3px gray;
 }
 
 #comp-comp{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 5px;
 }
 
 #comp-comp div{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 50%;
 }
 
@@ -101,8 +130,8 @@ section{
 }
 
 #comp-comp img{
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
 
 h3{
