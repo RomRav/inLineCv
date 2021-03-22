@@ -9,6 +9,14 @@
     order: 1;
 }
 
+em{
+    color: blue;
+}
+
+strong{
+    font-size: larger;
+}
+
 #titre{
     order: 2;
 }
@@ -79,7 +87,8 @@ section{
 }
 
 #pres-pres{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 #icones-liens{
