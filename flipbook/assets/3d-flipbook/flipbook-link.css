@@ -1,0 +1,57 @@
+
+.fbk-link {
+    position:absolute;
+    border:2px solid;
+    border-radius:.4rem;
+    cursor:pointer;
+    opacity:0;
+    transition:all .2s ease;
+    pointer-events: none ;
+
+    background-color: rgba(238,239,240,0.25);
+    border-color: #fff;
+    box-shadow: 0 0 1rem 0 rgba(32,35,42,0.05);
+}
+.fbk-link:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: .6rem;
+    border: 1px solid;
+    border-color: #39f;
+}
+
+[fbk-enable-links="true"] .fbk-link {
+    pointer-events: all ;
+}
+[fbk-enable-links="true"] .fbk-link:hover,
+[fbk-enable-links="true"][fbk-always-show-links="true"] .fbk-link {
+    opacity: 1 ;
+}
+
+.fbk-link > span {
+    position: absolute;
+    bottom: -4rem;
+    left: -.2rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    opacity: 0;
+    transition: all .2s ease;
+    pointer-events: none;
+    background-color: #20232a;
+    color: #fff;
+}
+.fbk-link:hover > span {
+    opacity: 1;
+    bottom: -3.5rem;
+}
+
+.css-layer.hidden {
+    opacity: 1 !important ;
+}

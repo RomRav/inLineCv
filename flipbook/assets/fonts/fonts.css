@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    src: url('Lato-Regular.woff2') format("woff2");
+    src: url('Lato-Regular.woff') format("woff");
+    src: url('Lato-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 500;
+    src: url('Lato-Bold.woff2') format("woff2");
+    src: url('Lato-Bold.woff') format("woff");
+    src: url('Lato-Bold.ttf') format("truetype");
+}

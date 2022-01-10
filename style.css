@@ -9,6 +9,14 @@
     order: 1;
 }
 
+em{
+    color: blue;
+}
+
+strong{
+    font-size: larger;
+}
+
 #titre{
     order: 2;
 }
@@ -79,7 +87,8 @@ section{
 }
 
 #pres-pres{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 #icones-liens{
@@ -110,7 +119,7 @@ section{
     background: url('images/photoId-2.jpg') no-repeat center;
 }
 
-#photo img:active{
+#photo img:hover{
     opacity: 0;
     cursor: grabbing;
 }
@@ -119,7 +128,7 @@ section{
     box-sizing: border-box;
     /* height: 100%; */
     box-shadow: 3px 3px 3px gray;
-    transition: opacity 1000ms ease-in-out;
+    transition: opacity 800ms ease-in;
 }
 
 #comp-comp{
@@ -142,9 +151,55 @@ section{
 #comp-comp img{
     height: 15%;
     width: 15%;
+    transition: transform 200ms;
+}
+
+#comp-comp img:hover{
+    transform: scale(1.5);
 }
 
 h3{
     text-transform: uppercase;
 }
 
+#passion ul{
+    padding-left: 5px;
+    list-style: none;
+}
+
+#sports:hover img{
+    transform: translateX(30px);
+}
+
+#passion img{
+    float: left;
+    padding-right: 40px;
+}
+
+#passion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#sports img{
+    transition: transform 800ms cubic-bezier(.05,-0.63,.37,.75);
+}
+
+#voyage img{
+    transform: rotate(20deg);
+    transition: transform 1000ms cubic-bezier(.05,-0.63,.37,.75);
+}
+
+#voyage:hover img{
+    transform:  rotate(-5deg) translateX(30px);
+}
+
+#loisirs img{
+    transition: transform 1000ms cubic-bezier(0,1.05,1,-0.99);
+    transform-origin: center;
+}
+
+#loisirs:hover img{
+   transform: rotate(-15deg) translateY(-10px);
+}
