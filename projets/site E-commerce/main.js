@@ -103,6 +103,7 @@ document.addEventListener('click', event =>{
     //Bouton de DIMINUTION de la quantitée d'un produit dans le panier.
     if(event.target.matches('.lessBtn')){
         moreOrLessQuantity('-', event.target.id);
+
     }
     //Bouton d'AUGMENTATION de la quantitée d'un produit dans le panier.
     if(event.target.matches('.moreBtn')){
@@ -115,7 +116,7 @@ document.addEventListener('click', event =>{
 });
 //Supprimez un ou tous les produits qui sont dans le panier.
 function removeProductFromBasket(id){
-    if(id != undefined){
+    if(id != ""){
         for(let i = 0; i<basket.length;i++){
             if(basket[i].product.ref == id){
                 basket.splice(i,1);
@@ -136,6 +137,9 @@ function moreOrLessQuantity(operateur, productRef){
                 productToModifiy.quantity++;
             }else if(operateur == '-' && productToModifiy.quantity>0){
                 productToModifiy.quantity--;
+                if(productToModifiy.quantity==0){
+                    removeProductFromBasket(productToModifiy.product.ref);
+                }
             }
         }
     }
